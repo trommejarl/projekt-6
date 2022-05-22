@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue";
+}
+/*NAV-MENU*/
+
+
+/*HERO BANNER*/
+.hero-banner{
+  display: grid;
+  height: 100%;
+  background-color: #6B9299;
+}
+
+.hero-image{
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  margin-right: 0;
+}
+
+/*MAIN*/
+
+main{
+  height: 10000px;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+  background-color: #6B9299;
+}
+
+.footer-indhold .tall-image{
+  width: auto;
+  max-width: 70px;
+  text-align: center;
+}
+
+.footer-indhold .small-image{
+  width: auto;
+  max-width: 70px;
+  text-align: center;
+}
+
+#malmoe{
+  max-width: 100px;
+}
+
+.kontakt-opl-1{grid-area: a;}
+.kontakt-opl-2{grid-area: b;}
+.kontakt-opl-3{grid-area: c;}
+.kontakt-opl-4{grid-area: d;}
+.kontakt-opl-5{grid-area: e;}
+
+.footer-indhold{
+  display: grid;
+  grid-template-areas:
+  'a b c d e';
+  justify-content: space-between;
+  text-align: center;
+  color: #ffffff;
+  height: 10rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  align-items: end;
+  line-height: 22px;
+}
