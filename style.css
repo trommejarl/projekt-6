@@ -1,16 +1,227 @@
+/*FÆLLES KODE*/
+
+/*Dette er de røde overskrifter*/
+
+.overskrift{
+  font-weight: normal;
+  color: #EC6755;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/*Dette er undertitlen*/
+
+.overskrift-h2{
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/*Dette er brødteksten*/
+
+.beskrivelse{
+  font-weight:lighter;
+  font-style: italic;
+  color: #000000;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+/*Dette er overskriften i boksen med grafik*/
+
+.overskrift-h3{
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/*Almindelig sort knap*/
+
+.knap-blue{
+  text-transform: uppercase;
+  color: #666565;
+  border: solid 1px #666565;
+  background-color: transparent;
+  border-radius: 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.knap-blue:hover{
+  color: #ffffff;
+  background-color: #666565;
+  transition: .3s;
+  cursor: pointer;
+}
+
+/*HTML*/
+
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Helvetica Neue";
 }
+
+
 /*NAV-MENU*/
+
+header{
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.side{
+  background-color: white;
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar{
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 3;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  font-size: 1.2rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: #333232;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+#logo-nav{
+  width: auto;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.active{
+border-bottom: 2px solid #ffffff;
+padding-bottom: 10px;
+}
+
+.active:hover {
+  border-bottom: 2px solid #333232;
+}
+
+@media (max-width:1200px){
+  .nav-menu{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:700px){
+.hamburger{
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  position: fixed;
+  left: -100%;
+  top: 0px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #E3D3CD;
+  width: 100%;
+  opacity: 100%;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 3;
+  height: 500px;
+}
+
+.nav-item{
+  margin: 16px 0;
+}
+
+.nav-menu.active{
+  left: 0;
+}
+}
 
 
 /*HERO BANNER*/
+
+.header-h1{grid-area: a;}
+.hero-image{grid-area: b;}
+
 .hero-banner{
   display: grid;
+  grid-template-areas:
+  'a b';
   height: 100%;
   background-color: #6B9299;
+  z-index: 2;
+  align-items: center;
+}
+
+.header-h1{
+  color: #ffffff;
+  font-size: 2rem;
+  width: 40%;
+  position: absolute;
+  padding-left: 5rem;
 }
 
 .hero-image{
@@ -20,12 +231,162 @@
   margin-right: 0;
 }
 
-/*MAIN*/
 
-main{
-  height: 10000px;
+
+/*MAIN Forside*/
+
+.textbox-forside{
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
+.overskrift-box{grid-area: box;}
+.service-1{grid-area: a;}
+.service-2{grid-area: b;}
+.service-3{grid-area: c;}
+.service-4{grid-area: d;}
+.service-5{grid-area: e;}
+.service-6{grid-area: f;}
+
+.services{
+  display: grid;
+  grid-template-areas:
+  'box box box'
+  'a b c'
+  'd e f';
+  background-color: #6B9299;
+  height: auto;
+  padding: 5rem;
+  grid-gap: 80px;
+  margin-top: 100px;
+  align-items: end;
+  /*text-align: center;*/
+  font-size: 25px;
+  justify-content: center;
+}
+
+.service-grafik{
+  width: auto;
+  max-width: 35%;
+}
+
+#grafik-tall{
+  max-width: 20%;
+}
+
+.services div i{
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.image-mosaic {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+.card:hover{
+  transform: scale(1.01);
+  transition: 1s;
+}
+
+.card-h3{grid-area: a;}
+.card-p{grid-area: b;}
+.card-arrow{grid-area: c;}
+
+.card{
+  display: grid;
+  grid-template-areas:
+  'a a'
+  'b c';
+}
+
+.card-p{
+  align-self: flex-end;
+  width: 90%;
+}
+
+.image-mosaic div div h3{
+  font-size: 1rem;
+  padding: 1rem;
+  height: auto;
+}
+
+.image-mosaic div div p{
+  align-self: flex-end;
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 30px;
+}
+
+.card-arrow{
+  font-size: 40px;
+  align-self: flex-end;
+  padding: 1rem;
+}
+
+.card-arrow:hover{
+  color: #E3D3CD;
+  transition: .3s;
+}
+
+.blue-baggrund{
+  background-color: #6B9299;
+}
+
+.green-baggrund{
+  background-color: #68724F;
+}
+
+@media screen and (min-width: 600px) {
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+}
+
+.call-to-action-forside{
+  text-align: center;
+}
+
+.kontakt-box-forside{
+  background-color: rgba(143, 80, 57, 0.25);
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+.kontakt-knapper{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
 
 
 /*FOOTER*/
