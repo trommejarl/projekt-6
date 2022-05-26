@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pentia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <script type="text/javascript" src="js/java.js" defer></script>
@@ -18,14 +19,15 @@
 
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link active">STRATECUTION</a></li>
-          <li class="nav-item"><a href="frivillige.html" class="nav-link">SERVICES</a></li>
-          <li class="nav-item"><a href="forestillinger.html" class="nav-link">CASES</a></li>
-          <li class="nav-item"><a href="billetter.html" class="nav-link">KONTAKT</a></li>
+          <li class="nav-item"><a href="" class="nav-link">SERVICES</a></li>
+          <li class="nav-item"><a href="cases.html" class="nav-link">CASES</a></li>
+          <li class="nav-item"><a href="" class="nav-link">KONTAKT</a></li>
         </ul>
+
         <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
         </div>
       </nav>
     </header>
@@ -33,7 +35,21 @@
 <main>
   <div class="hero-banner">
     <div class="header-h1"><h1>Creating Digital Advantage</h1></div>
-    <img class="hero-image" src="media/images/svg-for-pentia.png" alt="hero-banner" id="hero-billede">
+    <img class="hero-image" src="media/images/1.png" alt="hero-banner" id="hero-billede">
+  </div>
+
+  <div class="arrow"><a href="#scroll">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <div class="bread">
+    <ul>
+      <li><a href="#"></a>Startside |</li>
+      <li><a href="#"></a>Cases |</li>
+    </ul>
   </div>
 
   <div class="textbox-forside">
@@ -49,7 +65,16 @@
     <div class="service-3"><a href="#"><img class="service-grafik" src="media/images/grafik/3.png" alt="grafik-1"><br><br>Design af Digitale Produkter & Services<br><i class='bx bx-chevron-right'></i></a></div>
     <div class="service-4"><a href="#"><img class="service-grafik" src="media/images/grafik/4.png" alt="grafik-1"><br><br>Digital Governance & Organisering<br><i class='bx bx-chevron-right'></i></a></div>
     <div class="service-5"><a href="#"><img class="service-grafik" src="media/images/grafik/5.png" alt="grafik-1"><br><br><br>Appudvikling<br><i class='bx bx-chevron-right'></i></a></div>
-    <div class="service-6"><a href="#"><img class="service-grafik" src="media/images/grafik/6.png" alt="grafik-1"><br><br>Enterprise Arkitektur & Integration<br><i class='bx bx-chevron-right'></i></a></div>
+    <div class="service-6"><a href="#"><img class="service-grafik-wide" src="media/images/grafik/6.png" alt="grafik-1"><br><br>Enterprise Arkitektur & Integration<br><i class='bx bx-chevron-right'></i></a></div>
+
+    <div class="service-7"><a href="#"><img class="service-grafik" src="media/images/grafik/7.png" alt="grafik-1"><br><br>Selvbetjeningsløsninger & Portaler<br><i class='bx bx-chevron-right'></i></a></div>
+    <div class="service-8"><a href="#"><img class="service-grafik" src="media/images/grafik/8.png" alt="grafik-1"><br><br>Marketing Automation & Kundedata<br><i class='bx bx-chevron-right'></i></a></div>
+    <div class="service-9"><a href="#"><img class="service-grafik" src="media/images/grafik/9.png" alt="grafik-1"><br><br>Serviceaftaler & Løsningsoptimering<br><i class='bx bx-chevron-right'></i></a></div>
+  </div>
+
+  <div class="service-call-to-action">
+    <div class="service-call-to-action-1"><button class="knap-blue" type="button" name="button">KONTAKT OS</button></div>
+    <div class="service-call-to-action-2"><button class="knap-blue" type="button" name="button">RING MIG OP</button></div>
   </div>
 
   <div class="textbox-forside">
@@ -70,7 +95,7 @@
     </div>
 
     <div class="call-to-action-forside">
-      <button class="knap-blue" type="button" name="button">Se alle vores cases</button>
+      <button class="knap-gray" type="button" name="button">Se alle vores cases</button>
     </div>
 
     <div class="kontakt-box-forside">
@@ -78,8 +103,8 @@
       <h2 class="overskrift-h2">Lad os udfolde dit digitale potentiale</h2>
 
         <div class="kontakt-knapper">
-          <div class="kontakt-call-to-action-1"><button class="knap-pink" type="button" name="button">TILMELD DIG VORES NYHEDSBREV</button></div>
-          <div class="kontakt-call-to-action-2"><button class="knap-pink" type="button" name="button">RING MIG OP</button></div>
+          <div class="kontakt-call-to-action-1"><button class="knap-gul" type="button" name="button">TILMELD DIG VORES NYHEDSBREV</button></div>
+          <div class="kontakt-call-to-action-2"><button class="knap-gul" type="button" name="button">KONTAKT</button></div>
         </div>
 
     </div>
@@ -92,8 +117,8 @@
         <div class="kontakt-opl-1"><img class="tall-image" src="media/images/koebenhavn.png" alt="logo-kbh"><br><p><b>KØBENHAVN</b><br>Islands Brygge 55<br>2300 København S<br>Danmark</p></div>
         <div class="kontakt-opl-2"><img class="tall-image" src="media/images/odense.png" alt="logo-kbh"><br><p><b>ODENSE</b><br>Edisonvej 2<br>5000 Odense C<br>Danmark</p></div>
         <div class="kontakt-opl-3"><img class="small-image" src="media/images/aarhus.png" alt="logo-kbh"><br><p><b>AARHUS</b><br>Skovvejen 2B<br>8000 Aarhus C<br>Danmark</p></div>
-        <div class="kontakt-opl-4"><img class="small-image" src="media/images/malmoe.png" alt="logo-kbh" id="malmoe"><br><p><b>KØBENHAVN</b><br>Islands Brygge 55<br>2300 København S<br>Danmark</p></div>
-        <div class="kontakt-opl-5"><img  class="small-image" src="media/images/mobil.png" alt="logo-kbh"><br><p><b>MALMØ</b><br>Storgatan 22a<br>21142 Malmö<br>Sverige</p></div>
+        <div class="kontakt-opl-4"><img class="small-image" src="media/images/malmoe.png" alt="logo-kbh" id="malmoe"><br><p><b>MALMØ</b><br>Storgatan 22a<br>21142 Malmö<br>Sverige</p></div>
+        <div class="kontakt-opl-5"><img  class="small-image" src="media/images/mobil.png" alt="logo-kbh"><br><p><b>INFO</b><br>+45 70 23 33 30<br>info@pentia.dk<br>cvr-nr. 20868872</p></div>
       </div>
     </footer>
   </body>
