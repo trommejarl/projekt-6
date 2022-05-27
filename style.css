@@ -1407,8 +1407,7 @@ footer{
   position:absolute;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items:flex-end;
+  justify-content: end;
   bottom:-60px;
   transition: 0.6s;
   transition-property: bottom;
