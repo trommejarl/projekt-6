@@ -1373,9 +1373,12 @@ footer{
   position: relative;
   height: 300px;
   width: 400px;
-  margin: 20px;
+  margin: 30px;
   overflow: hidden;
   background-color:rgba(101, 115, 75,1);
+}
+.job{
+  background-color:#6B9299;
 }
 
 .stillinger img{
@@ -1406,7 +1409,7 @@ footer{
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 300;
-  margin-top: 130px;
+  margin-top: 80px;
   transition: 0.4s;
   transition-property: transform;
 }
