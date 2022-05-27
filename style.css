@@ -1484,6 +1484,7 @@ footer{
 
 .grafik-karriere img{
   width: 120px;
+  color: black;
 }
 .priser p{
   font-weight:lighter;
@@ -1494,6 +1495,18 @@ footer{
   padding-left: 55px;
 }
 
+.section-karriere-2{
+  display: grid;
+  grid-template-areas:
+  'a'
+  'b';
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 30px;
+  height: 400px;
+  width: 100%;
+}
 
 @media (max-width:750px){
   .stillinger{
