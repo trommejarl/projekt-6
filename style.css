@@ -7,7 +7,6 @@ a{
 
 html{
   background-color: #f7f4f4;
-  font-fam
 }
 
 /*pil på forside*/
@@ -1467,10 +1466,57 @@ footer{
   padding-right: 15px;
 }
 
+.priser{grid-area: a;}
+.grafik-karriere{grid-area: b;}
+
+.section-karriere{
+  display: grid;
+  grid-template-areas:
+  'a b';
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 30px;
+  height: 400px;
+  width: 100%;
+  background-color:rgba(153, 76, 51, .25);
+}
+
+.grafik-karriere img{
+  width: 120px;
+}
+.priser p{
+  font-weight:lighter;
+  font-style: italic;
+  color: black;
+  font-size: 1.3rem;
+  line-height: 50px;
+  padding-left: 55px;
+}
+
+
 @media (max-width:750px){
   .stillinger{
     flex: 100%;
     max-width: 480px;
+  }
+
+  .section-karriere{
+    display: grid;
+    grid-template-areas:
+    'a'
+    'b';
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+    height: 400px;
+    width: 100%;
+    background-color:rgba(153, 76, 51, .25);
+  }
+  .grafik-karriere img{
+    width: 120px;
+    padding-top: 30px;
   }
 }
 @media (max-width:400px){
