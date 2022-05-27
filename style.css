@@ -1486,6 +1486,7 @@ footer{
   width: 120px;
   color: black;
 }
+
 .priser p{
   font-weight:lighter;
   font-style: italic;
@@ -1498,14 +1499,17 @@ footer{
 .section-karriere-2{
   display: grid;
   grid-template-areas:
-  'a'
-  'b';
+  'a b';
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
   padding: 30px;
   height: 400px;
   width: 100%;
+}
+
+.grafik-karriere-2 img{
+  width: 70px;
 }
 
 @media (max-width:750px){
@@ -1527,6 +1531,20 @@ footer{
     width: 100%;
     background-color:rgba(153, 76, 51, .25);
   }
+
+  .section-karriere-2{
+    display: grid;
+    grid-template-areas:
+    'a'
+    'b';
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+    height: 400px;
+    width: 100%;
+  }
+
   .grafik-karriere img{
     width: 120px;
     padding-top: 30px;
