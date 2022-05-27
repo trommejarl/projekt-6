@@ -1724,59 +1724,141 @@ margin-top: 20px;
 
 .section-job-1{
   width: 100%;
-  height: 400px;
+  height: 500px;
   margin-top: 50px;
   background: #6B9299;
 }
 .beskrivelse-job h2{
   color: white;
   font-size: 30px;
-  padding-left: 50px;
+  padding-left: 100px;
   padding-top: 40px;
   padding-bottom: 30px;
-  line-height: 40px;
+
 }
 .beskrivelse-job p{
   font-size: 16px;
   color: white;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 40px;
 }
 
 .section-job-2{
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .beskrivelse-job-hvid h2{
   color: black;
   font-size: 30px;
-  padding-left: 50px;
+  padding-left: 100px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
 .beskrivelse-job-hvid p{
   font-size: 16px;
   color: black;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 40px;
+}
+
+.section-job-3{
+  width: 100%;
+  height: 600px;
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+.beskrivelse-job h2{
+  color: black;
+  font-size: 30px;
+  padding-left: 100px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.beskrivelse-job p{
+  font-size: 16px;
+  color: black;
+  padding-left: 100px;
+  padding-right: 100px;
   line-height: 40px;
 
 }
 
+.beskrivelse-job{grid-area:a;}
+.job-billede{grid-area:b;}
+
+.section-job-4{
+  width: 100%;
+  margin-top: 100px;
+  height: 800px;
+  display: grid;
+  grid-template-areas:
+  'a b';
+  grid-template-columns: 1fr 1fr;
+  padding:30px;
+  background-color:rgba(153, 76, 51, .25);
+}
+
+.beskrivelse-job ul li{
+  list-style-type: circle;
+  list-style-position:outside;
+  line-height: 45px;
+  font-size: 16px;
+
+}
+.job-billede {
+  padding: 40px;
+}
+.job-billede img{
+  object-fit: cover;
+  height: 400px;
+  width: 300px;
+}
+
+
 @media (max-width:750px){
+
+.section-job-1 {
+  height: 350px;
+}
   .beskrivelse-job h2{
     font-size: 22px;
+    padding-left: 15px;
   }
     .beskrivelse-job p{
       font-size: 14px;
       line-height: 25px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
+    .section-job-2 {
+      height: 350px;
+    }
   .beskrivelse-job-hvid h2{
     font-size: 22px;
+    padding-left: 15px;
   }
 .beskrivelse-job-hvid p{
   font-size: 14px;
   line-height: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section-job-3 {
+  height: 500px;
+}
+
+.section-job-4{
+  display: grid;
+  grid-template-areas:
+  'a'
+  'b';
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 800px;
+  width: 100%;
 }
 }
