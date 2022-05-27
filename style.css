@@ -5,7 +5,7 @@ a{
   text-decoration: none;
 }
 
-body{
+html{
   background-color: #f7f4f4;
 }
 
@@ -1294,7 +1294,6 @@ footer{
   height: auto;
   margin-bottom: 50px;
   margin-top: 50px;
-
 }
 
 .farve-tekst{grid-area: a;}
@@ -1304,12 +1303,12 @@ footer{
   display: grid;
   grid-template-areas:
   'a b';
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: 1000px;
   padding: 20px;
   height: 200px;
   margin-top: 50px;
-  line-height: 50px;
+  line-height: 40px;
   color: #ffffff;
 }
 
