@@ -1455,13 +1455,14 @@ footer{
   font-size: 1.3rem;
   line-height: 50px;
   padding-left: 55px;
+  text-align:center;
 }
 
 .section-karriere-2{
   display: grid;
   grid-template-areas:
-  'a b';
-  grid-template-columns: 1fr;
+  'b a';
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
   padding: 30px;
@@ -1472,6 +1473,36 @@ footer{
 .grafik-karriere-2 img{
   width: 70px;
 }
+
+.section-karriere-3{
+  height: 400px;
+  width: 100%;
+  background-color: #E3CF62;
+}
+
+
+.værdi-1{grid-area: a;}
+.værdi-2{grid-area:b;}
+.værdi-3{grid-area:c;}
+
+.section-karriere-4{
+  display: grid;
+  grid-template-areas:
+  'a b c';
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 25px;
+  padding: 30px;
+  height: 400px;
+  width: 100%;
+}
+
+.grafik-karriere img{
+  width: 120px;
+  color: black;
+}
+
 
 @media (max-width:750px){
   .stillinger{
