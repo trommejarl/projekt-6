@@ -1431,6 +1431,7 @@ footer{
 .grafik-karriere{grid-area: b;}
 
 .section-karriere{
+  margin-top:40px;
   display: grid;
   grid-template-areas:
   'a b';
@@ -1445,7 +1446,6 @@ footer{
 
 .grafik-karriere img{
   width: 120px;
-  color: black;
 }
 
 .priser p{
@@ -1454,9 +1454,13 @@ footer{
   color: black;
   font-size: 1.3rem;
   line-height: 50px;
-  padding-left: 55px;
   text-align:center;
+  padding-left: 60px;
+  padding-right:60px;
 }
+
+.priser{grid-area: a;}
+.grafik-karriere-2{grid-area: b;}
 
 .section-karriere-2{
   display: grid;
@@ -1471,7 +1475,12 @@ footer{
 }
 
 .grafik-karriere-2 img{
-  width: 70px;
+  width: 80px;
+}
+
+.hjerte img{
+  width: 140px;
+  justify-content: center;
 }
 
 .section-karriere-3{
@@ -1480,14 +1489,31 @@ footer{
   background-color: #E3CF62;
 }
 
+.section-karriere-3 h3{
+  font-size: 25px;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+.section-karriere-3 p{
+  font-weight:lighter;
+  font-style: italic;
+  color: black;
+  font-size: 1.3rem;
+  line-height: 50px;
+  padding-left: 60px;
+  padding-right:60px;
+  padding-top: 30px;
+}
 
 .værdi-1{grid-area: a;}
 .værdi-2{grid-area:b;}
 .værdi-3{grid-area:c;}
+.hjerte{grid-area: d;}
 
 .section-karriere-4{
   display: grid;
   grid-template-areas:
+  'd d d'
   'a b c';
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -1497,12 +1523,6 @@ footer{
   height: 400px;
   width: 100%;
 }
-
-.grafik-karriere img{
-  width: 120px;
-  color: black;
-}
-
 
 @media (max-width:750px){
   .stillinger{
@@ -1532,14 +1552,39 @@ footer{
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    padding: 30px;
     height: 400px;
     width: 100%;
+  }
+
+
+  .priser p{
+    font-weight:lighter;
+    font-style: italic;
+    color: black;
+    font-size: 16px;
+    line-height: 25px;
+
+    text-align:center;
   }
 
   .grafik-karriere img{
     width: 120px;
     padding-top: 30px;
+  }
+  .section-karriere-3 h3{
+    font-size: 20px;
+    padding-left: 15px;
+
+  }
+  .section-karriere-3 p{
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+  .section-karriere-4{
+    font-size: 20px;
   }
 }
 @media (max-width:400px){
