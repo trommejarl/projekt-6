@@ -1725,7 +1725,7 @@ margin-top: 20px;
 .section-job-1{
   width: 100%;
   height: 500px;
-  margin-top: 50px;
+  margin-top: 100px;
   background: #6B9299;
 }
 .beskrivelse-job h2{
@@ -1734,8 +1734,8 @@ margin-top: 20px;
   padding-left: 100px;
   padding-top: 40px;
   padding-bottom: 30px;
-
 }
+
 .beskrivelse-job p{
   font-size: 16px;
   color: white;
@@ -1800,10 +1800,10 @@ margin-top: 20px;
   background-color:rgba(153, 76, 51, .25);
 }
 
-.beskrivelse-job ul li{
+.beskrivelse-job-liste ul li{
   list-style-type: circle;
   list-style-position:outside;
-  line-height: 45px;
+  line-height: 35px;
   font-size: 16px;
 
 }
@@ -1814,6 +1814,38 @@ margin-top: 20px;
   object-fit: cover;
   height: 400px;
   width: 300px;
+}
+
+.beskrivelse-job-liste h2{
+  color: black;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.section-job-5{
+  width: 100%;
+  height: 800px;
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+.ansoeg{
+  background-color: #E3CF62;
+  height: 200px;
+  margin-top: 100px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.section-job-7{
+  width: 100%;
+  height: 800px;
+  padding-top: 40px;
+}
+
+.flere-cases{
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 
@@ -1861,4 +1893,31 @@ margin-top: 20px;
   height: 800px;
   width: 100%;
 }
+
+.beskrivelse-job ul li{
+  list-style-type: circle;
+  list-style-position:outside;
+  line-height: 40px;
+  font-size: 14px;
+}
+.job-billede img{
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+  align-items: center
+}
+
+.beskrivelse-job-liste h2{
+  font-size: 22px;
+  padding-left: 15px;
+}
+.section-job-5 {
+  height: 500px;
+  margin-bottom: 50px;
+}
+.section-job-7 {
+  height: 500px;
+  margin-bottom: 50px;
+}
+
 }
