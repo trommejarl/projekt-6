@@ -1592,3 +1592,54 @@ footer{
     font-size: 18px;
   }
 }
+
+
+
+/*Cases siden*/
+
+.case-pic{grid-area: a;}
+.case-text{grid-area: b;}
+.case-pil{grid-area: c;}
+
+.case-box{
+  display: grid;
+  grid-template-areas:
+  'a b'
+  'a c';
+  background-color: rgba(107, 146, 153, .25);
+  height: auto;
+  padding: 50px;
+  padding-right: 100px;
+  grid-template-columns: 1fr 1fr;
+  line-height: 40px;
+  grid-gap: 0px;
+}
+
+.case-box :not(.case-pil){
+  justify-items: center;
+}
+
+.italic-text{
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.case-h3{
+  font-size: 2rem;
+}
+
+.case-box img{
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.case-pil button{
+
+  justify-content: end;
+
+}
+
+.case-pil a:hover{
+
+}
