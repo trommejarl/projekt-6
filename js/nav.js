@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction(); scrollFunctionTop()};
 function scrollFunction() {
 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-  document.getElementById("bagg").style.background = "#65734B";
+  document.getElementById("bagg").style.background = "#333232";
 } else {
   document.getElementById("bagg").style.background = "none";
 }
