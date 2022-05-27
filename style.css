@@ -1718,3 +1718,65 @@ margin-top: 20px;
   padding: 0;
   margin: 0;
 }
+
+
+/* Job siden start*/
+
+.section-job-1{
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+  background: #6B9299;
+}
+.beskrivelse-job h2{
+  color: white;
+  font-size: 30px;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  line-height: 40px;
+}
+.beskrivelse-job p{
+  font-size: 16px;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section-job-2{
+  width: 100%;
+  height: 400px;
+}
+.beskrivelse-job-hvid h2{
+  color: black;
+  font-size: 30px;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.beskrivelse-job-hvid p{
+  font-size: 16px;
+  color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 40px;
+
+}
+
+@media (max-width:750px){
+  .beskrivelse-job h2{
+    font-size: 22px;
+  }
+    .beskrivelse-job p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+  .beskrivelse-job-hvid h2{
+    font-size: 22px;
+  }
+.beskrivelse-job-hvid p{
+  font-size: 14px;
+  line-height: 25px;
+}
+}
