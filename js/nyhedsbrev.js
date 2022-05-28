@@ -51,9 +51,9 @@ function emailIsValid(email){
 
 
   document.getElementById('button').addEventListener('click', function(){
-    document.getElementById('bg-modal').style.display = 'flex';
+    document.querySelector('.bg-modal').style.display = 'flex';
   });
 
-  document.getElementById('close').addEventListener('click', function(){
-    document.getElementById('bg-modal').style.display = 'none';
+  document.querySelector('.close').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'none';
   });

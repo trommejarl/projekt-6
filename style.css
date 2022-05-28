@@ -1942,7 +1942,7 @@ margin-top: 20px;
   padding: 20px;
   position: relative;
   z-index: 999;
-  background-color:rgba(107, 146, 153, 0.50);
+  background-color:rgba(107, 146, 153, 1);
 }
 
 .close{
@@ -1960,8 +1960,10 @@ margin-top: 20px;
 
 #form {
   width: 500px;
-  height: 500px;
+  height: 550px;
   position: fixed;
+  background-color:rgba(107, 146, 153, 1);
+  padding: 50px;
 
 
 }
