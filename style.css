@@ -1965,7 +1965,6 @@ margin-top: 20px;
   padding: 20px;
   position: relative;
   z-index: 999;
-  background-color:rgba(107, 146, 153, 1);
 }
 
 .close{
@@ -1985,10 +1984,9 @@ margin-top: 20px;
   width: 500px;
   height: 550px;
   position: fixed;
-  background-color:rgba(107, 146, 153, 1);
+  background-color:#6B9299;
+
   padding: 50px;
-
-
 }
 form{
   max-width: 500px;
@@ -2110,4 +2108,13 @@ input[type="submit"]:hover{
 .popup.active .content{
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-width:620px){
+#form {
+  width: 350px;
+  height: 550px;
+  position: fixed;
+  padding: 30px;
+}
 }
