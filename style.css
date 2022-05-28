@@ -1839,7 +1839,7 @@ margin-top: 20px;
 
 .section-job-7{
   width: 100%;
-  height: 800px;
+  height: 700px;
   padding-top: 40px;
 }
 
@@ -1849,7 +1849,7 @@ margin-top: 20px;
 }
 
 
-@media (max-width:750px){
+@media (max-width:700px){
 
 .section-job-1 {
   height: 400px;
@@ -1922,9 +1922,28 @@ margin-top: 20px;
   height: 500px;
   margin-bottom: 50px;
 }
+}
 
+@media (min-width:750px){
+  .section-job-5 {
+    height: 700px;
+    margin-bottom: 30px;
+  }
+  .section-job-4{
+    height: 600px;
+  }
+}
+@media (min-width:980px){
+  .section-job-5 {
+    height: 525px;
+    margin-bottom: 30px;
+  }
+  .section-job-4{
+    height: 500px;
+  }
 
 }
+
 
 
 /*Nyhedsbrev*/
