@@ -1924,7 +1924,7 @@ margin-top: 20px;
 
 
 /*Nyhedsbrev*/
-#bg-modal{
+.bg-modal{
   height: 100%;
   width: 100%;
   position: absolute;
@@ -1934,17 +1934,18 @@ margin-top: 20px;
   align-items: center;
   display: none;
 }
-#modal-content{
+
+.modal-content{
   width: 500px;
   height: 500px;
   border-radius: 4px;
   padding: 20px;
   position: relative;
   z-index: 999;
-  background-color:rgba(107, 146, 153, 1);
+  background-color:rgba(107, 146, 153, 0.50);
 }
 
-#close{
+.close{
   position: absolute;
   top: 0;
   justify-content: center;
@@ -1958,20 +1959,19 @@ margin-top: 20px;
 }
 
 #form {
-  width: 600px;
+  width: 500px;
   height: 500px;
   position: fixed;
-  background-color:rgba(107, 146, 153, 1);
-  padding: 50px;
+
 
 }
-#form{
+form{
   max-width: 500px;
   border-radius: 3px;
   box-sizing: border-box;
 }
 
-#form h1{
+form h1{
   margin:0;
   color:black;
   text-align: center;
@@ -2062,7 +2062,7 @@ input[type="submit"]:hover{
   box-sizing: border-box;
 }
 
-.popup #close-btn{
+.popup .close-btn{
   cursor: pointer;
   position: absolute;
   right: 20px;
