@@ -1831,7 +1831,7 @@ margin-top: 20px;
 }
 .ansoeg{
   background-color: #E3CF62;
-  height: 200px;
+  height: 170px;
   margin-top: 100px;
   padding-top: 10px;
   margin-bottom: 20px;
@@ -1900,7 +1900,9 @@ margin-top: 20px;
   list-style-position:outside;
   line-height: 40px;
   font-size: 14px;
+
 }
+
 .job-billede img{
   object-fit: cover;
   height: 200px;
@@ -1913,13 +1915,14 @@ margin-top: 20px;
   padding-left: 15px;
 }
 .section-job-5 {
-  height: 500px;
+  height: 620px;
   margin-bottom: 50px;
 }
 .section-job-7 {
   height: 500px;
   margin-bottom: 50px;
 }
+
 
 }
 
