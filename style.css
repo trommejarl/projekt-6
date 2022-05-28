@@ -1796,7 +1796,6 @@ margin-top: 20px;
   grid-template-areas:
   'a b';
   grid-template-columns: 1fr 1fr;
-  padding:30px;
   background-color:rgba(153, 76, 51, .25);
 }
 
@@ -1805,6 +1804,7 @@ margin-top: 20px;
   list-style-position:outside;
   line-height: 35px;
   font-size: 16px;
+  padding-right: 15px;
 
 }
 .job-billede {
@@ -1852,7 +1852,7 @@ margin-top: 20px;
 @media (max-width:750px){
 
 .section-job-1 {
-  height: 350px;
+  height: 400px;
 }
   .beskrivelse-job h2{
     font-size: 22px;
@@ -1866,7 +1866,8 @@ margin-top: 20px;
     }
 
     .section-job-2 {
-      height: 350px;
+      height: 425px;
+      padding-bottom: 50px;
     }
   .beskrivelse-job-hvid h2{
     font-size: 22px;
