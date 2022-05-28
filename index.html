@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <script type="text/javascript" src="js/java.js" defer></script>
   <script type="text/javascript" src="js/nav.js" defer></script>
+  <script type="text/javascript" src="js/nyhedsbrev.js" defer></script>
   </head>
   <body>
 
@@ -75,6 +76,7 @@
     <div class="service-call-to-action-2"><button class="knap-blue" type="button" name="button">RING MIG OP</button></div>
   </div>
 
+
   <div class="textbox-forside">
     <h1 class="overskrift">CASES</h1>
     <h2 class="overskrift-h2">Det har vi lavet for andre</h2>
@@ -101,8 +103,39 @@
       <h2 class="overskrift-h2">Lad os udfolde dit digitale potentiale</h2>
 
         <div class="kontakt-knapper">
-          <div class="kontakt-call-to-action-1"><button class="knap-gul" type="button" name="button">TILMELD DIG VORES NYHEDSBREV</button></div>
           <div class="kontakt-call-to-action-2"><button class="knap-gul" type="button" name="button">KONTAKT</button></div>
+          <button class="knap-gul" id="button" type="button" name="button">Nyhedsbrev</button>
+          <div id="bg-modal">
+          <div id="modal-content">
+          <div id="close">+</div>
+         <div id="form">
+           <form onsubmit="event.preventDefault(); validateForm()">
+         <h1>Nyhedsbrev</h1>
+         <h2>Tilmeld dig nyhedsbrevet så du ikke går glip af vores AWESOME events, viden og nyheder!</h2>
+
+         <label for="name">Fornavn:</label>
+         <input type="text" id="fornavn" placeholder="Dit fornavn">
+         <small class="error"></small>
+
+         <label for="efternavn">Efternavn:</label>
+         <input type="text" id="efternavn" placeholder="Dit efternavn">
+         <small class="error"></small>
+
+         <label for="email">Email:</label>
+         <input id="email" placeholder="Din email"></input>
+         <small class="error"></small>
+
+         <div class="center">
+           <input  id="btn1" type="submit" value="Tilmeld">
+           <p id="success"></p>
+
+         </div>
+           </form>
+
+         </div>
+         </div>
+         </div>
+
         </div>
 
     </div>
