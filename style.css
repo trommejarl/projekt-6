@@ -1345,6 +1345,25 @@ footer{
   color: #ffffff;
 }
 
+@media (max-width:750px){
+  .farve {
+    display: grid;
+    grid-template-areas:
+        'a'
+        'b';
+    grid-template-columns: 1fr;
+    width: auto;
+    padding: 20px;
+    height: auto;
+    line-height: 40px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+
+
+
 .farve-knap{
   display: flex;
   justify-content: end;
