@@ -944,15 +944,17 @@ footer{
 
 .sidebar{grid-area: a;}
 .home-section-farver{grid-area: b;}
+
 .sg{
   display: grid;
   grid-template-areas:
   'a b';
+  grid-template-columns: 1fr 8fr;
 }
 
 
 .sidebar{
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 78px;
   background: rgb(107,146,153);
@@ -1279,6 +1281,35 @@ footer{
   margin-top: 50px;
 }
 
+.knapper-styleguide{
+  display: grid;
+  grid-template-areas:
+  'a'
+  'b'
+  'c'
+  'd'
+  'e'
+  'f';
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.pentia-logoside{
+  width: 80%;
+  background-color: #666565;
+  margin-top: 100px;
+}
+
+.pentia-logo-logoside{
+  width: 100%;
+  max-width: 500px;
+  padding: 50px;
+}
+
 .farve-tekst{grid-area: a;}
 .farve-knap{grid-area: b;}
 
@@ -1603,29 +1634,44 @@ footer{
 @media (min-width:900px){
 
 .filtrer{
-  margin-left: 50px;
+  padding-left: 50px;
   margin-top: 100px;
+  width: 100%;
 }
 
-
-.filtrer ul{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  color: #fff;
-}
-
-.filtrer ul li{
-  list-style: none;
-  background-color: #6B9299;
-  padding: 12px 20px;
-  margin: 5px;
-  letter-spacing: 1px;
+.filtrer button{
   cursor: pointer;
 }
 
-.filtrer ul li.aktiv-knap{
+#round-corners{
+  border-radius: 50%;
+  font-size: 18px;
+  padding:14px;
+}
+
+
+/* Style the buttons */
+.filt {
+  border: none;
+  outline: none;
+  padding: 16px;
+  background-color: rgba(107, 146, 153, .25);
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+/* Add a light grey background on mouse-over */
+.filt:hover {
+  background-color: #506B71;
+  color: #fff;
+  transition: .3s;
+}
+
+/* Add a dark background to the active button */
+.filt.aktiv-filt-knap {
   background-color: #36494D;
+  color: white;
 }
 
 .case-pic{grid-area: a;}
@@ -1753,6 +1799,50 @@ margin-top: 20px;
 }
 
 @media (max-width:900px){
+
+  .filtrer{
+    margin-top: 100px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .filtrer button{
+    cursor: pointer;
+  }
+
+
+  #round-corners{
+    border-radius: 50%;
+    padding:14px;
+  }
+
+
+  /* Style the buttons */
+  .filt {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgba(107, 146, 153, .25);
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+
+  /* Add a light grey background on mouse-over */
+  .filt:hover {
+    background-color: #506B71;
+    color: #fff;
+    transition: .3s;
+  }
+
+  /* Add a dark background to the active button */
+  .filt.aktiv-filt-knap {
+    background-color: #36494D;
+    color: white;
+  }
+
+
 
 .case-pic{grid-area: a;}
 .case-text{grid-area: b;}
