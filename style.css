@@ -1195,6 +1195,20 @@ footer{
   align-items: center;
 }
 
+@media (max-width: 1000px){
+
+  .kopier-kode{
+    display: grid;
+    grid-template-areas:
+    'a'
+    'b';
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
 .beskrivende-tekst{
   line-height: 25px;
   text-align: left;
@@ -1247,58 +1261,18 @@ footer{
 
 /*Dette er knapperne på styleguiden*/
 
-.knapper-container-blue{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #6B9299;
-  height: 150px;
-  margin-bottom: 50px;
+.kode-tekst-knap{
+  resize: none;
+  width: auto;
+  max-width: 80%;
+  height: 50px;
 }
 
-.knapper-container-gray{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  height: 150px;
-  margin-bottom: 50px;
-}
+.farve-1{grid-area: a; background-color: #6B9299; padding: 50px; margin-right: 100px; color: #fff;}
+.farve-2{grid-area: b; border: 1px solid black; padding: 50px; margin-right: 100px;}
+.farve-3{grid-area: c; background-color: #E3CF62; padding: 50px; margin-right: 100px;}
+.farve-4{grid-area: d; border: 1px solid black; padding: 50px; margin-right: 100px;}
 
-.knapper-container-gul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #E3CF62;
-  height: 150px;
-  margin-bottom: 50px;
-}
-
-.farve-1{grid-area: a;}
-.farve-2{grid-area: b;}
-.farve-3{grid-area: c;}
-.farve-4{grid-area: d;}
-.farve-5{grid-area: e;}
-.farve-6{grid-area: f;}
-
-.farver-styleguide{
-  display: grid;
-  grid-template-areas:
-  'a'
-  'b'
-  'c'
-  'd'
-  'e'
-  'f';
-  width: 100%;
-  height: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
 
 .knapper-styleguide{
   display: grid;
@@ -1306,16 +1280,134 @@ footer{
   'a'
   'b'
   'c'
-  'd'
-  'e'
-  'f';
-  width: 100%;
-  height: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
+  'd';
+  margin-bottom: 100px;
+  grid-gap: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+.textbox-knapper{grid-area: a; width: 80%;}
+.knapper-container{grid-area: b;}
+.css-tekst{grid-area: c;}
+.beskrivende-tekst{grid-area: d; width: 80%;}
+
+.farve-1, .farve-2, .farve-3, .farve-4{
+  display: grid;
+  grid-template-areas:
+  'a a'
+  'b c'
+  'd d';
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.knap-overskrift-knap{
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+@media (max-width: 1111px){
+
+  .knap-overskrift-knap{
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+  .knapper-styleguide .farve-1, .farve-2, .farve-3, .farve-4 p{
+    text-align: center;
+  }
+
+  .farve-1{grid-area: a;
+    background-color: #6B9299;
+    padding: 50px;
+    margin-right: 0px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .farve-2{grid-area: b;
+    padding: 50px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .farve-3{grid-area: c;
+    background-color: #E3CF62;
+    padding: 50px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .farve-4{grid-area: d;
+    border: 1px solid black;
+    padding: 50px;
+    margin-right: 0px;
+  }
+
+
+  .kode-tekst-knap{
+    resize: none;
+    width: auto;
+    max-width: 150px;
+    height: 100px;
+  }
+
+  .knapper-styleguide{
+    display: grid;
+    grid-template-areas:
+    'a'
+    'b'
+    'c'
+    'd';
+    margin-bottom: 100px;
+    grid-gap: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    justify-items: center;
+  }
+
+
+  .farve-1, .farve-2, .farve-3, .farve-4{
+    display: grid;
+    grid-template-areas:
+    'a'
+    'b'
+    'c'
+    'd';
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    justify-content: center;
+    text-align: center;
+    width: 220px;
+  }
+
+  .textbox-knapper{
+    width: 80%;
+  }
+
+  .knapper-container{
+
+  }
+
+  .css-tekst{
+
+  }
+
+  .beskrivende-tekst{
+    width: 80%;
+  }
+
+}
+
+
+
+
+
+
+
+
 
 .pentia-logoside{
   width: 80%;
@@ -1337,12 +1429,13 @@ footer{
   grid-template-areas:
   'a b';
   grid-template-columns: 1fr 1fr;
-  width: 1000px;
+  width: 80%;
   padding: 20px;
-  height: 200px;
+  height: auto;
   margin-top: 50px;
   line-height: 40px;
   color: #ffffff;
+  margin-left: 50px;
 }
 
 @media (max-width:750px){
