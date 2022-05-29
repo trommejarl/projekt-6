@@ -50,7 +50,7 @@ html{
 
 /*Dette er undertitlen*/
 
-.overskrift-h2{
+.overskrift-undertitel{
   font-weight: normal;
   color: #000000;
   text-align: center;
@@ -96,7 +96,7 @@ html{
 
   /*Dette er undertitlen*/
 
-  .overskrift-h2{
+  .overskrift-undertitel{
     font-weight: normal;
     color: #000000;
     text-align: center;
@@ -1150,6 +1150,13 @@ footer{
   margin-top: 100px;
 }
 
+.home-section-typografi{
+  min-height: 100vh;
+  top: 0;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
 .textbox-knapper{
   display: flex;
   justify-content: flex-start;
@@ -1162,6 +1169,18 @@ footer{
   width: auto;
   max-width: 80%;
   height: 50px;
+}
+
+.kode-tekst-typ{
+  resize: none;
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  font-size: 16px;
+}
+
+.css-tekst-typ{
+  text-align: center;
 }
 
 .css-tekst{grid-area: a;}
