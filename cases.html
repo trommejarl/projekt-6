@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <script type="text/javascript" src="js/java.js" defer></script>
   <script type="text/javascript" src="js/nav.js" defer></script>
+  <script type="text/javascript" src="js/filter.js" defer></script>
   </head>
   <body>
 
@@ -60,9 +61,15 @@
   </div>
 
 
-  <div class="filtrer"></div>
+  <div class="filtrer">
+    <button class="filt" onclick="filterObjects('all')" type="button" name="button">Alle</button>
+    <button class="filt" onclick="filterObjects('app')" type="button" name="button">App udvikling</button>
+    <button class="filt" onclick="filterObjects('mark')" type="button" name="button">Marketing</button>
+    <button class="filt" onclick="filterObjects('trans')" type="button" name="button">Digital transformation</button>
+    <button class="filt" onclick="filterObjects('forre')" type="button" name="button">Digital forretningsudvikling</button>
+  </div>
 
-  <div class="case-box blue-baggrund-case margin-top">
+  <div class="case-box blue-baggrund-case margin-top trans">
     <div class="case-pic">
       <img src="media/images/case/1.jpg" alt="sundhedstyrelsen">
     </div>
@@ -76,7 +83,7 @@
 
 <br>
 
-  <div class="case-box-1">
+  <div class="case-box-1 trans">
     <div class="case-pic">
       <img src="media/images/case/5.jpg" alt="sundhedstyrelsen">
     </div>
@@ -93,13 +100,13 @@
   <div class="line-border"></div>
   </div>
 
-    <div class="case-box">
+    <div class="case-box mark">
       <div class="case-pic">
         <img src="media/images/case/3.jpg" alt="sundhedstyrelsen">
       </div>
         <div class="case-text">
           <h3 class="case-h3">Kia</h3>
-          <p class="italic-text">Marketing automation </p>
+          <p class="italic-text">Marketing automation</p>
           <p class="case-text">Et stærkt nyt marketing-setup giver KIA mulighed for at være nærværende og yde høj service på tværs af segmenter og målgrupper. Samtidig giver set-uppet KIA mulighed for at navigere frem til de besøgende, der er købsklare.
 </p>
           <button class="knap-gray margin" type="button" name="button">Læs mere</button>
@@ -108,7 +115,7 @@
 
     <br>
 
-      <div class="case-box-1 green-baggrund-case">
+      <div class="case-box-1 green-baggrund-case forre">
         <div class="case-pic">
           <img src="media/images/case/6.jpg" alt="sundhedstyrelsen">
         </div>
@@ -122,7 +129,7 @@
 
       <br>
 
-        <div class="case-box">
+        <div class="case-box app">
           <div class="case-pic">
             <img src="media/images/case/4.jpg" alt="sundhedstyrelsen">
           </div>
