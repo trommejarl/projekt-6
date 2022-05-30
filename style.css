@@ -9,6 +9,10 @@ html{
   background-color: #f7f4f4;
 }
 
+.head-styleguide{
+  position: absolute;
+}
+
 .header-style{
   display: flex;
   position: absolute;
